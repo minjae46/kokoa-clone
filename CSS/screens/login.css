@@ -1,0 +1,50 @@
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+#login-form input {
+  padding: 15px 0;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.4s ease-in-out;
+}
+/* attribute selector 
+     not: input이 (선택자)이 아닐 때에만 아래의 효과가 나타남! */
+
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* #login-form input:focus {
+      outline: none;
+      }
+      모든 페이지의 form에 적용하고 싶다면, reset.css파일에 적용해주면 된다 
+  */
+
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+/* 해당 input을 클릭했을 때, border-color가 바뀜 */
+
+#login-form input[type="submit"] {
+  cursor: pointer;
+  /* 커서를 올렸을 때 pointer모양으로 바뀜 */
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  /* a가 color를 부모의 색으로부터 상속받아 나타내는 기능.
+       이 경우는 default인 black을 상속받는다 */
+  font-size: 13px;
+}
