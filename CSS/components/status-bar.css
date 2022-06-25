@@ -3,7 +3,7 @@
   /* justify-content: space-between;
        space-between으로 하면, 정확히 한가운데로 오지 않는다. */
   justify-content: center;
-  padding: 5px 3px;
+  padding: 5px 5px;
 }
 
 .status-bar__column {
