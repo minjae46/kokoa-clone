@@ -143,6 +143,7 @@
 
 .reply__column button {
   background-color: rgba(0, 0, 0, 0.4);
+  color: white;
   border: none;
   width: 25px;
   height: 25px;
