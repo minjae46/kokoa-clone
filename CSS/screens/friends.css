@@ -29,3 +29,32 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /*더 이상 마우스에 걸리지 않게 빠지는 기능.
+      하지만 보이지 않을 뿐, 여전히 해당 화면이 계속 존재한다.
+      따라서 해당 페이지의 html을 사라졌다 나타나는 방식으로 하려면, 
+      javascript를 사용해야 한다. */
+  }
+}
+
+#splash-screen {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  color: white;
+  animation: hideSplashScreen 0.8s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
