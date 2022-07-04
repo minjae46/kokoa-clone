@@ -1,1 +1,1 @@
-Start cloning kokoatalk !
+Kokoatalk Clone 2022
